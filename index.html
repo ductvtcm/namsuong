@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HEAD - Nam Sương (Mẫu)</title>
+  <meta name="description" content="Mẫu trang web cửa hàng xe máy giống Nam Sương - trang chủ, sản phẩm, khuyến mãi, liên hệ.">
+  <style>
+    /* ----- Reset & base ----- */
+    :root{--brand:#d32f2f;--dark:#111;--muted:#666}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, system-ui, Arial, sans-serif;color:var(--dark);line-height:1.45}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:1200px;margin:0 auto;padding:0 16px}
+
+    /* ----- Header ----- */
+    header{background:#fff;border-bottom:1px solid #eee}
+    .topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo img{height:52px}
+    nav ul{display:flex;gap:18px;list-style:none}
+    .cta{background:var(--brand);color:#fff;padding:8px 12px;border-radius:8px}
+
+    /* ----- Hero ----- */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;padding:36px 0;align-items:center}
+    .hero .title{font-size:28px;font-weight:700;margin-bottom:8px}
+    .hero p{color:var(--muted);margin-bottom:16px}
+    .hero .actions{display:flex;gap:12px}
+    .card{background:#fff;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.06);padding:12px}
+
+    /* ----- Products ----- */
+    .section{padding:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .product{border-radius:10px;overflow:hidden;background:#fff}
+    .product .meta{padding:12px}
+    .product h4{font-size:16px;margin-bottom:6px}
+    .price{color:var(--brand);font-weight:700}
+
+    /* ----- Promo strip ----- */
+    .promo{display:flex;gap:12px;overflow:auto;padding:12px 0}
+    .promo .pill{flex:0 0 auto;background:linear-gradient(90deg,#fff,#fff);border:1px dashed #eee;padding:10px 14px;border-radius:999px}
+
+    /* ----- Footer ----- */
+    footer{background:#0b1220;color:#fff;padding:28px 0;margin-top:30px}
+    footer a{color:inherit}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+
+    /* ----- Responsive ----- */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="logo">
+        <!-- Thay bằng logo của bạn -->
+        <img src="https://via.placeholder.com/180x52?text=NamSuong" alt="Logo Nam Sương">
+        <div>
+          <div style="font-weight:700">HEAD NAM SƯƠNG</div>
+          <div style="font-size:12px;color:var(--muted)">Đại lý ủy quyền - Dịch vụ & Phụ tùng</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#sanpham">Sản phẩm</a></li>
+          <li><a href="#khuyenmai">Khuyến mãi</a></li>
+          <li><a href="#dichvu">Dịch vụ</a></li>
+          <li><a href="#lienhe">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="cta" href="tel:+840000000">Gọi: 0900 000 000</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="title">Chào mừng đến HEAD Nam Sương</div>
+        <p>Đại lý ủy quyền Honda - Xe số, xe tay ga, phụ tùng chính hãng, dịch vụ bảo dưỡng chuyên nghiệp.</p>
+        <div class="actions">
+          <a class="cta" href="#sanpham">Xem sản phẩm</a>
+          <a class="card" href="#khuyenmai">Khuyến mãi</a>
+        </div>
+
+        <div style="margin-top:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+          <div class="card">
+            <strong>Giờ làm việc</strong>
+            <div style="font-size:13px;color:var(--muted)">T2 - CN: 7:30 - 18:00</div>
+          </div>
+          <div class="card">
+            <strong>Địa chỉ</strong>
+            <div style="font-size:13px;color:var(--muted)">123 Đường A, Quận B, TP. HCM</div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <!-- Ảnh sản phẩm nổi bật -->
+          <img src="https://via.placeholder.com/400x300?text=Wave+RSX+2026" alt="Sản phẩm nổi bật">
+          <div style="padding:10px">
+            <h3 style="margin-bottom:6px">Wave RSX FI 2026</h3>
+            <div class="price">Giá từ 18.900.000 ₫</div>
+            <div style="margin-top:8px"><a href="#" class="cta">Đặt thử</a></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="khuyenmai" class="section">
+      <h2>Khuyến mãi & Tin tức</h2>
+      <div class="promo">
+        <div class="pill">Giảm 10% phụ tùng</div>
+        <div class="pill">Trả góp 0% trong 6 tháng</div>
+        <div class="pill">Tặng phụ kiện khi mua xe</div>
+      </div>
+    </section>
+
+    <section id="sanpham" class="section">
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="grid" style="margin-top:12px">
+        <!-- Lặp các card sản phẩm. Thay ảnh và nội dung thực tế -->
+        <article class="product card">
+          <img src="https://via.placeholder.com/600x350?text=Wave+RSX" alt="Wave RSX">
+          <div class="meta">
+            <h4>Wave RSX FI</h4>
+            <div class="price">18.900.000 ₫</div>
+            <p style="font-size:13px;color:var(--muted);margin-top:8px">Thiết kế thể thao, tiết kiệm nhiên liệu.</p>
+          </div>
+        </article>
+
+        <article class="product card">
+          <img src="https://via.placeholder.com/600x350?text=Vision" alt="Vision">
+          <div class="meta">
+            <h4>Vision</h4>
+            <div class="price">29.500.000 ₫</div>
+            <p style="font-size:13px;color:var(--muted);margin-top:8px">Tiện lợi, phù hợp đô thị.</p>
+          </div>
+        </article>
+
+        <article class="product card">
+          <img src="https://via.placeholder.com/600x350?text=Blade" alt="Blade">
+          <div class="meta">
+            <h4>Blade</h4>
+            <div class="price">24.200.000 ₫</div>
+            <p style="font-size:13px;color:var(--muted);margin-top:8px">Phong cách thể thao.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="dichvu" class="section">
+      <h2>Dịch vụ & Phụ tùng</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:16px;margin-top:12px;align-items:start">
+        <div>
+          <div class="card" style="margin-bottom:12px">
+            <h4>Bảo dưỡng định kỳ</h4>
+            <p style="font-size:13px;color:var(--muted)">Dịch vụ nhanh, kỹ thuật viên đạt chuẩn, phụ tùng chính hãng.</p>
+          </div>
+          <div class="card">
+            <h4>Thay nhớt & Kiểm tra</h4>
+            <p style="font-size:13px;color:var(--muted)">Gói kiểm tra miễn phí khi thay nhớt.</p>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Đặt lịch dịch vụ</strong>
+          <form style="margin-top:10px;display:grid;gap:8px">
+            <input placeholder="Họ tên" />
+            <input placeholder="Số điện thoại" />
+            <select><option>Chọn dịch vụ</option><option>Bảo dưỡng</option><option>Thay nhớt</option></select>
+            <button class="cta" type="button">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="lienhe" class="section">
+      <h2>Liên hệ</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:16px;margin-top:12px">
+        <div>
+          <div class="card">
+            <p><strong>Địa chỉ:</strong> 123 Đường A, Quận B, TP. HCM</p>
+            <p><strong>Hotline:</strong> <a href="tel:+84090000000">0900 000 000</a></p>
+            <p><strong>Email:</strong> info@namsuong.example</p>
+          </div>
+          <div style="margin-top:12px" class="card">
+            <!-- Thay bằng iframe Google Maps thực tế -->
+            <img src="https://via.placeholder.com/800x300?text=Bản+đồ+Google+Maps" alt="Bản đồ">
+          </div>
+        </div>
+
+        <aside class="card">
+          <strong>Giờ mở cửa</strong>
+          <ul style="margin-top:8px;color:var(--muted);font-size:13px;list-style:none;padding-left:0">
+            <li>Thứ 2 - Chủ nhật: 07:30 - 18:00</li>
+          </ul>
+          <div style="margin-top:12px"><a class="cta" href="https://wa.me/84900000000">Chat Zalo/WhatsApp</a></div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>HEAD Nam Sương</h4>
+          <p style="color:rgba(255,255,255,0.8);font-size:13px">Đại lý ủy quyền Honda - Bán xe, phụ tùng & dịch vụ</p>
+        </div>
+        <div>
+          <h4>Liên hệ</h4>
+          <p style="color:rgba(255,255,255,0.8);font-size:13px">0900 000 000<br>info@namsuong.example</p>
+        </div>
+        <div>
+          <h4>Giờ mở cửa</h4>
+          <p style="color:rgba(255,255,255,0.8);font-size:13px">7:30 - 18:00 (Tất cả các ngày)</p>
+        </div>
+      </div>
+      <div style="margin-top:14px;font-size:13px;color:rgba(255,255,255,0.6)">© 2025 HEAD Nam Sương - Mẫu trang</div>
+    </div>
+  </footer>
+
+</body>
+</html>
